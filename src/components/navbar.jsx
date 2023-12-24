@@ -1,9 +1,10 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Navbar = () => {
   return (
     <div className='flex justify-between items-center'>
-        <img src="/images/logo_1.png" className='w-[160px] h-[40px]' alt="" />
+        <Image width={160} height={40} src="/images/logo_1.png" className='' alt="" />
         <div className='text-white space-x-8 text-base font-semibold'>
             <span>Products</span>
             <span>Services</span>

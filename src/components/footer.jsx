@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Footer = () => {
@@ -5,7 +6,7 @@ const Footer = () => {
     <div className='px-[150px] pt-16 pb-24'>
         <div className='flex justify-between space-x-20'>
             <div className='basis-1/3'>
-                <img src="/images/logo_2.png" alt="" />
+                <Image width={150} height={40} src="/images/logo_2.png" alt="" />
                 <p className='text-[#777777] mt-8'>Social media validation business model canvas graphical user interface launch party creative facebook iPad twitter.</p>
 
             </div>

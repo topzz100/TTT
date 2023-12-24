@@ -1,5 +1,6 @@
 import React from 'react'
 import AuthorCard from './authorCard'
+import Image from 'next/image'
 
 const EnterpriseTemplate = () => {
 
@@ -29,10 +30,10 @@ const EnterpriseTemplate = () => {
   return (
     <div className=' bg-[#0A2640] px-[150px] py-16'>
         <div className='relative mb-10'>
-            <p className='text-5xl text-white w-[60%] leading-[72px] manrope'>An enterprise template to ramp up your company website</p>
+            <p className='text-5xl text-white w-[70%] leading-[72px] manrope'>An enterprise template to ramp up your company website</p>
             <div className='absolute -bottom-6 -right-8 flex space-x-6'>
-                <img src="/images/arr-1.png" alt="" />
-                <img src="/images/arr-2.png" alt="" />
+                <Image width={50} height={50} src="/images/arr-1.png" alt="" />
+                <Image width={50} height={50} src="/images/arr-2.png" alt="" />
             </div>
         </div>
         <div className='flex justify-between space-x-12 mt-16'>
@@ -41,9 +42,6 @@ const EnterpriseTemplate = () => {
                     <AuthorCard id={author?.id} author={author}/>
                 ))
             }
-            {/* <AuthorCard/>
-            <AuthorCard/>
-            <AuthorCard/> */}
         </div>
     </div>
   )

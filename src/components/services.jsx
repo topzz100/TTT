@@ -29,12 +29,9 @@ const Services = () => {
         <div className='flex justify-between mt-16'>
           {
             services.map((service) => (
-              <ServiceCard id={service?.id} service={service}/>
+              <ServiceCard key={service?.id} service={service}/>
             ))
           }
-            {/* <ServiceCard/>
-            <ServiceCard/>
-            <ServiceCard/> */}
         </div>
     </div>
   )
