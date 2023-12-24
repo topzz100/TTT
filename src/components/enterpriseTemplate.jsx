@@ -39,7 +39,7 @@ const EnterpriseTemplate = () => {
         <div className='flex justify-between space-x-12 mt-16'>
             {
                 authors.map((author) => (
-                    <AuthorCard id={author?.id} author={author}/>
+                    <AuthorCard key={author?.id} author={author}/>
                 ))
             }
         </div>
